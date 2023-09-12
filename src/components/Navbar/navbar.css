@@ -1,0 +1,63 @@
+.nav__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  background-color: var(--white);
+  /* width: 100%; */
+  padding: 26px 24px;
+  z-index: 99;
+}
+
+.nav__logo {
+  /* width: 128.13px; */
+  height: 20px;
+}
+
+.nav__mobile {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 72px;
+  left: 0;
+  right: 0;
+  padding: 25px;
+  z-index: 8;
+}
+
+.nav__mobile ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.nav__mobile ul li {
+  padding: 16px 24px;
+  width: 100%;
+  text-align: center;
+}
+
+.nav__sign-in-btn {
+  background-color: var(--button);
+  color: var(--white);
+  padding: 16px 24px;
+  border-radius: var(--radius-small);
+}
+
+.nav__menu-btn {
+  margin-left: auto;
+}
+
+.nav__menu-btn img {
+  width: 24px;
+}
+
+.nav {
+  display: none;
+  /* margin-left: auto; */
+}

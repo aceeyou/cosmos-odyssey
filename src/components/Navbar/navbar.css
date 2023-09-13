@@ -21,10 +21,11 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 72px;
+  top: 79px;
   left: 0;
   right: 0;
   padding: 25px;
+  background-color: var(--white);
   z-index: 8;
 }
 

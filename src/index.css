@@ -4,8 +4,11 @@
   --light-teal: #a9c2cb;
   --button: #0d0f12;
   --white: #fff;
+  --light-brown-gray: #5c5050;
 
+  --hero-box-shadow: 6px 4px 38px -10px #0d0f1280;
   --box-shadow: 0 4px 8px #0d0f1280;
+  --card-shadow: 0 20px 39px -12px #64767d33;
   --button-shadow: 0 19px 45px -10px #0d0f1280;
   --astronaut-shadow-color: #63757ccc;
   --astronaut-shadow-filter: blur(67px);
@@ -53,4 +56,16 @@ button {
   background-color: transparent;
   border: none;
   outline: none;
+  font-family: "Plus Jakarta Sans";
+}
+
+input {
+  font-family: "Plus Jakarta Sans";
+  font-size: 1rem;
+  border: none;
+  outline: none;
+}
+
+.sr-only {
+  display: none;
 }

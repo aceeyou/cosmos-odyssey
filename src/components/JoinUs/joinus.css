@@ -1,0 +1,61 @@
+.join-us-container {
+  position: relative;
+  margin-top: 770px;
+}
+
+.join-us-container .img-container-jupiter {
+  width: 100vw;
+  height: 440px;
+  background-color: black;
+  overflow: none;
+}
+
+.join-us-container .img-container-jupiter img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: -6%;
+  /* transform: scaleX(-1); */
+}
+
+.join-us-form {
+  position: absolute;
+  top: 0;
+  padding: 40px 24px 40px;
+}
+
+.join-us-form h2,
+.join-us-form p,
+.join-us-form button {
+  color: var(--white);
+}
+
+.join-us-form h2 {
+  font-size: 2.5rem;
+  font-weight: var(--fw-extrabold);
+}
+
+.join-us-form p {
+  margin: 18px 0 24px;
+  font-size: 0.875rem;
+  font-weight: var(--fw-medium);
+  line-height: 1.5;
+}
+
+.join-us-form .subscribe-form input {
+  background-color: var(--white);
+  padding: 22px 24px;
+  width: 100%;
+  border-radius: var(--radius-medium);
+  margin-bottom: 12px;
+}
+
+.join-us-form .subscribe-form button {
+  background-color: var(--light-teal);
+  padding: 22px 24px;
+  width: 100%;
+  border-radius: var(--radius-medium);
+  font-size: 1.25rem;
+  font-weight: var(--radius-semibold);
+  cursor: pointer;
+}

@@ -1,0 +1,27 @@
+.companies-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 70px 0;
+}
+
+.companies-container div {
+  flex: 1 0 50%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.companies-container div img {
+  width: 80%;
+  height: 24px;
+}
+
+.companies-container div .spacex-logo {
+  width: 148px;
+}
+
+.companies-container div .nasa-logo,
+.companies-container div .astroscale-logo {
+  width: 88px;
+}

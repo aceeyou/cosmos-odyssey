@@ -1,0 +1,38 @@
+.main-footer {
+  padding: 32px 24px;
+}
+
+.main-footer .footer__logo-container .logo {
+  width: 154px;
+  height: 24px;
+}
+
+.footer__nav {
+  margin: 20px 0;
+}
+
+.footer__nav ul li {
+  padding: 12px 0;
+  width: 100%;
+  font-weight: var(--fw-semibold);
+}
+
+.privacy-concerns ul {
+  display: flex;
+  font-weight: var(--fw-semibold);
+}
+
+.privacy-concerns ul li {
+  color: var(--secondary-black);
+  cursor: pointer;
+}
+
+.privacy-concerns ul li:first-of-type {
+  margin-right: 32px;
+}
+
+.footer__email {
+  margin-top: 24px;
+  color: var(--light-brown-gray);
+  font-weight: var(--fw-semibold);
+}

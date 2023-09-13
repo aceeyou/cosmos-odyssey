@@ -6,14 +6,14 @@ export default function Hero() {
       <div className="img-container">
         <img
           className="hero-img-earth"
-          src="/images/earth.jpg"
+          src="images/earth.jpg"
           alt="hero banner earth"
         />
       </div>
       <h2 className="hero__headline">Unveiling the Wonders of the Universe</h2>
       <div className="hero__astronaut-container">
         <img
-          src="/images/astronaut.png"
+          src="images/astronaut.png"
           alt="astronaut hero"
           className="astronaut-img"
         />
@@ -21,7 +21,7 @@ export default function Hero() {
         <div className="total-time-in-space-container">
           <div className="hero__astronaut-boxes-top top">
             <div className="icon-container time-icon">
-              <img src="/icons/stopwatch.svg" alt="stopwatch icon" />
+              <img src="icons/stopwatch.svg" alt="stopwatch icon" />
             </div>
             <p>Total time in space</p>
           </div>
@@ -33,25 +33,25 @@ export default function Hero() {
         <div className="spacewalks-container">
           <div className="hero__astronaut-boxes-top top">
             <div className="icon-container spacewalks-icon">
-              <img src="/icons/chart-pie.svg" alt="spacewalks icon" />
+              <img src="icons/chart-pie.svg" alt="spacewalks icon" />
             </div>
             <p>Spacewalks</p>
           </div>
           <div className="hero__astronaut-boxes-bottom bottom">
-            <img src="/images/line-graph.png" alt="spacewalks line graph" />
-            <img src="/images/pie.png" alt="spacewalks pie graph" />
+            <img src="images/line-graph.png" alt="spacewalks line graph" />
+            <img src="images/pie.png" alt="spacewalks pie graph" />
           </div>
         </div>
         {/* EXERCISING */}
         <div className="exercising-container">
           <div className="hero__astronaut-boxes-top top">
             <div className="icon-container exercising-icon">
-              <img src="/icons/heart.svg" alt="exercising icon" />
+              <img src="icons/heart.svg" alt="exercising icon" />
             </div>
             <p>Exercising</p>
           </div>
           <div className="hero__astronaut-boxes-bottom bottom">
-            <img src="/images/pulse.png" alt="spacewalks line graph" />
+            <img src="images/pulse.png" alt="spacewalks line graph" />
           </div>
         </div>
       </div>
@@ -71,7 +71,7 @@ export default function Hero() {
             <div className="watch-video-container">
               <p>Watch Video</p>
               <div className="icon-container watch-video-btn watch-video-icon">
-                <img src="/icons/play.svg" alt="watch video icon" />
+                <img src="icons/play.svg" alt="watch video icon" />
               </div>
             </div>
           </div>

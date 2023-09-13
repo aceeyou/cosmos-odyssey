@@ -4,11 +4,7 @@ export default function Explore() {
   return (
     <section className="explore-container">
       <div className="img-container-mars">
-        <img
-          src="/images/mars.jpg"
-          alt="mars"
-          className="heading-bg-img mars"
-        />
+        <img src="images/mars.jpg" alt="mars" className="heading-bg-img mars" />
       </div>
       <div className="explore-content">
         <h1>

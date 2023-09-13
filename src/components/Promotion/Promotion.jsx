@@ -32,7 +32,7 @@ function Article({ icon, title, content }) {
   return (
     <article className="promotion__article">
       <div className="icon-container astronomy-icon">
-        <img src={`/icons/${icon}.svg`} alt={`${title} icon`} />
+        <img src={`icons/${icon}.svg`} alt={`${title} icon`} />
       </div>
       <h2>{title}</h2>
       <p>{content}</p>

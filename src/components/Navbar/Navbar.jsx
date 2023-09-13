@@ -30,7 +30,7 @@ export default function Navbar() {
         className="nav__menu-btn"
         onClick={() => setIsMenuOpen((isOpen) => !isOpen)}
       >
-        <img src="/icons/menu.svg" alt="mobile menu button" />
+        <img src="icons/menu.svg" alt="mobile menu button" />
       </button>
     </div>
   );

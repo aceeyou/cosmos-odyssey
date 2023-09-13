@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/cosmos-odyssey/static/css/main.43d07385.css",
+    "main.js": "/cosmos-odyssey/static/js/main.cce79911.js",
+    "index.html": "/cosmos-odyssey/index.html",
+    "main.43d07385.css.map": "/cosmos-odyssey/static/css/main.43d07385.css.map",
+    "main.cce79911.js.map": "/cosmos-odyssey/static/js/main.cce79911.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.43d07385.css",
+    "static/js/main.cce79911.js"
+  ]
+}

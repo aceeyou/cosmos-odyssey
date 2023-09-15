@@ -1,6 +1,6 @@
 .join-us-container {
   position: relative;
-  margin-top: 770px;
+  /* margin-top: 770px; */
 }
 
 .join-us-container .img-container-jupiter {
@@ -22,6 +22,7 @@
   position: absolute;
   top: 0;
   padding: 40px 24px 40px;
+  width: 100%;
 }
 
 .join-us-form h2,
@@ -33,13 +34,19 @@
 .join-us-form h2 {
   font-size: 2.5rem;
   font-weight: var(--fw-extrabold);
+  max-width: 200px;
 }
 
 .join-us-form p {
   margin: 18px 0 24px;
+  max-width: 330px;
   font-size: 0.875rem;
   font-weight: var(--fw-medium);
   line-height: 1.5;
+}
+
+.join-us-form .subscribe-form {
+  width: 100%;
 }
 
 .join-us-form .subscribe-form input {
@@ -56,6 +63,61 @@
   width: 100%;
   border-radius: var(--radius-medium);
   font-size: 1.25rem;
-  font-weight: var(--radius-semibold);
+  font-weight: var(--fw-semibold);
   cursor: pointer;
+}
+
+@media only screen and (min-width: 1024px) {
+  .join-us-container .img-container-jupiter {
+    width: 92vw;
+    background-color: black;
+    /* padding: 0 40px; */
+    border-radius: 40px;
+    padding: unset;
+    margin: 0 auto;
+  }
+
+  .join-us-container .img-container-jupiter img {
+    object-position: unset;
+    border-radius: 40px;
+  }
+
+  .join-us-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 440px;
+    padding: 0px 80px;
+  }
+
+  .join-us-form h2 {
+    max-width: unset;
+  }
+
+  .join-us-form p {
+    max-width: 398px;
+    margin-bottom: 33px;
+  }
+
+  .subscribe-form {
+    display: flex;
+    column-gap: 24px;
+  }
+
+  .join-us-form .subscribe-form input {
+    width: 416px;
+    /* height: 100%; */
+  }
+
+  .join-us-form .subscribe-form button {
+    all: unset;
+    height: 65px;
+    padding: 0 40px;
+    border-radius: var(--radius-medium);
+    background-color: var(--light-teal);
+    font-size: 1.25rem;
+    font-weight: var(--fw-semibold);
+    color: var(--white);
+    cursor: pointer;
+  }
 }

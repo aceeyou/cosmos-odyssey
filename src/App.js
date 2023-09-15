@@ -14,8 +14,8 @@ function App() {
         <Navbar />
         <Hero />
       </header>
-      <Companies />
       <main>
+        <Companies />
         <Promotion />
         <Explore />
       </main>

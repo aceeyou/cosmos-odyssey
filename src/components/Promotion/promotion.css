@@ -36,3 +36,30 @@
   font-weight: var(--fw-medium);
   line-height: 1.5;
 }
+
+@media (min-width: 1024px) {
+  .promotion-container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 32px;
+  }
+
+  .promotion-container h1 {
+    flex: 2;
+    font-size: 2.5rem;
+    padding-left: 40px;
+  }
+
+  .articles-container {
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    padding-right: 40px;
+  }
+
+  .promotion__article {
+    flex: 1 0 45%;
+    margin-top: unset;
+  }
+}

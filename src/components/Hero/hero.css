@@ -27,20 +27,22 @@
 
 .hero__astronaut-container {
   width: 100vw;
-  position: absolute;
-  top: 171px;
+  position: relative;
+  top: -208px;
   left: 0;
   right: 0;
   margin: 0 auto;
 }
 
 .hero__astronaut-container .astronaut-img {
-  display: block;
+  display: flex;
   width: 80%;
   margin: 0 auto;
+  z-index: 10;
 }
 
 .hero__astronaut-shadow {
+  display: flex;
   position: absolute;
   top: 100px;
   right: 66px;
@@ -49,12 +51,14 @@
   border-radius: 18.75rem;
   background: rgba(99, 117, 124, 0.8);
   filter: blur(67px);
-  z-index: -1;
+  z-index: 1;
 }
 
 .total-time-in-space-container {
-  margin: 0px auto 0;
+  position: absolute;
+  /* top: 0; */
   width: 84%;
+  margin: 0px calc((100% - 84%) / 2);
   padding: 10px;
   background-color: var(--primary-black);
   border-radius: var(--radius-large);
@@ -113,17 +117,18 @@
   top: 215px;
   left: 24px;
   padding: 10px;
-  width: 172px;
+  width: 45%;
   background-color: var(--white);
   border-radius: var(--radius-large);
   box-shadow: var(--hero-box-shadow);
+  z-index: 10;
 }
 
 .exercising-container {
   top: 137px;
   left: unset;
   right: 24px;
-  width: 149px;
+  width: 42%;
 }
 
 .spacewalks-container .hero__astronaut-boxes-top p,
@@ -140,6 +145,8 @@
 
 .spacewalks-container .hero__astronaut-boxes-bottom {
   margin-top: 13px;
+  display: flex;
+  flex-direction: row;
 }
 
 .exercising-container .hero__astronaut-boxes-bottom img {
@@ -149,17 +156,21 @@
 
 .spacewalks-container .hero__astronaut-boxes-bottom img:first-of-type {
   width: 95px;
+  flex: 0.7;
+  aspect-ratio: 4 / 3;
   margin-right: 8px;
 }
 
 .spacewalks-container .hero__astronaut-boxes-bottom img:nth-of-type(2) {
   width: 47px;
+  flex: 0.5;
+  aspect-ratio: 1;
 }
 
 .hero__description {
   width: 90%;
   margin: 0 auto;
-  margin-top: 323px;
+  margin-top: -160px;
 }
 
 .hero__description h3 {
@@ -203,4 +214,66 @@
 
 .hero__desctiption-buttons .watch-video-container .watch-video-icon img {
   transform: translateY(4px);
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero {
+    margin-top: 120px;
+  }
+
+  .hero .img-container {
+    padding: 0 40px;
+    height: unset;
+    background-color: transparent;
+  }
+
+  .hero__headline {
+    position: absolute;
+    top: 32px;
+    left: 84px;
+    width: 300px;
+    font-size: 2.5rem;
+  }
+
+  .hero__astronaut-container {
+    width: 36vw;
+    position: relative;
+    top: -330px;
+    left: unset;
+    right: 100px;
+    margin: 0 0 0 auto;
+  }
+
+  .hero__astronaut-container .astronaut-img {
+    display: flex;
+    width: 100%;
+    z-index: 10;
+    margin: unset;
+  }
+
+  .total-time-in-space-container {
+    top: 460px;
+    left: -50px;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .total-time-in-space-container p {
+    color: var(--white);
+    font-size: 1.125rem;
+    font-weight: var(--fw-semibold);
+  }
+
+  .total-time-in-space-container .bottom .time-in-space-text {
+    letter-spacing: 0.36rem;
+    font-weight: var(--fw-extrabold);
+    font-size: 1.25rem;
+  }
+
+  .hero__description {
+    width: 43%;
+    position: absolute;
+    top: 570px;
+    left: 40px;
+  }
 }

@@ -36,3 +36,19 @@
   color: var(--light-brown-gray);
   font-weight: var(--fw-semibold);
 }
+
+@media (min-width: 1024px) {
+  .main-footer {
+    margin-top: 60px;
+  }
+
+  .footer__nav ul {
+    display: flex;
+    column-gap: 24px;
+  }
+
+  .footer__nav ul li {
+    width: unset;
+    padding: 12px 32px 12px 0px;
+  }
+}

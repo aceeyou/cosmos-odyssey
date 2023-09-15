@@ -5,7 +5,7 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <div className="nav__container">
-      <img className="nav__logo" src="logo.svg" alt="odessy logo" />
+      <img className="nav__logo" src={process.env.PUBLIC_URL + "/logo.svg"} alt="odessy logo" />
       <nav className="nav">
         <ul className="nav__list">
           <li>Stay Connected</li>
@@ -30,7 +30,7 @@ export default function Navbar() {
         className="nav__menu-btn"
         onClick={() => setIsMenuOpen((isOpen) => !isOpen)}
       >
-        <img src="icons/menu.svg" alt="mobile menu button" />
+        <img src={process.env.PUBLIC_URL + "/icons/menu.svg"} alt="mobile menu button" />
       </button>
     </div>
   );

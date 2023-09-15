@@ -6,24 +6,28 @@ export default function Companies() {
       <div className="company-logo-containers">
         <img
           className="spacex-logo"
-          src="images/spacex.png"
+          src={process.env.PUBLIC_URL + "/images/spacex.png"}
           alt="Space X logo"
         />
       </div>
       <div className="company-logo-containers">
         <img
           className="boeing-logo"
-          src="images/beoing.png"
+          src={process.env.PUBLIC_URL + "/images/beoing.png"}
           alt="Beoing logo"
         />
       </div>
       <div className="company-logo-containers">
-        <img className="nasa-logo" src="images/nasa.png" alt="Nasa logo" />
+        <img
+          className="nasa-logo"
+          src={process.env.PUBLIC_URL + "/images/nasa.png"}
+          alt="Nasa logo"
+        />
       </div>
       <div className="company-logo-containers">
         <img
           className="astroscale-logo"
-          src="images/astroscale.png"
+          src={process.env.PUBLIC_URL + "/images/astroscale.png"}
           alt="Astroscale.png"
         />
       </div>

@@ -4,7 +4,11 @@ export default function Footer() {
   return (
     <div className="main-footer">
       <div className="footer__logo-container">
-        <img src="logo.svg" alt="Odyssey logo" className="logo" />
+        <img
+          src={process.env.PUBLIC_URL + "/logo.svg"}
+          alt="Odyssey logo"
+          className="logo"
+        />
       </div>
       <nav className="footer__nav">
         <ul>

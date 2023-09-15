@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/cosmos-odyssey/static/css/main.43d07385.css",
-    "main.js": "/cosmos-odyssey/static/js/main.56b69ac3.js",
+    "main.css": "/cosmos-odyssey/static/css/main.a27e0271.css",
+    "main.js": "/cosmos-odyssey/static/js/main.16982c96.js",
     "index.html": "/cosmos-odyssey/index.html",
-    "main.43d07385.css.map": "/cosmos-odyssey/static/css/main.43d07385.css.map",
-    "main.56b69ac3.js.map": "/cosmos-odyssey/static/js/main.56b69ac3.js.map"
+    "main.a27e0271.css.map": "/cosmos-odyssey/static/css/main.a27e0271.css.map",
+    "main.16982c96.js.map": "/cosmos-odyssey/static/js/main.16982c96.js.map"
   },
   "entrypoints": [
-    "static/css/main.43d07385.css",
-    "static/js/main.56b69ac3.js"
+    "static/css/main.a27e0271.css",
+    "static/js/main.16982c96.js"
   ]
 }

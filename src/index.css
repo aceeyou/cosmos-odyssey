@@ -69,3 +69,14 @@ input {
 .sr-only {
   display: none;
 }
+
+.icon-container {
+  background-color: var(--light-teal);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-container img {
+  transform: translateY(1px);
+}

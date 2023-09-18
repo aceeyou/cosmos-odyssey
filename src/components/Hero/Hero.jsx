@@ -21,16 +21,16 @@ export default function Hero() {
           join us on a journey to the furthest reaches of the cosmos.{" "}
         </p>
         <div className="buttons">
-          <button className="hero-get-startedd">Get Started</button>
-          <label htmlFor="watch-video">
-            Watch Video
+          <div className="hero-get-started">Get Started</div>
+          <div>
+            <p>Watch Video</p>
             <div className="icon-container play-icon-container">
               <img
                 src={process.env.PUBLIC_URL + "/icons/play.svg"}
                 alt="play video"
               />
             </div>
-          </label>
+          </div>
         </div>
       </div>
     </div>
@@ -80,7 +80,7 @@ function Astronaut() {
       <div className="box exercising-box">
         <div className="top">
           <div className="icon-container icon-spacewalks">
-            <img src={process.env.PUBLIC_URL + "/icons/chart-pie.svg"} alt="" />
+            <img src={process.env.PUBLIC_URL + "/icons/heart.svg"} alt="" />
           </div>
           <p>Exercising</p>
         </div>

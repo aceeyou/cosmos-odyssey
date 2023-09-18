@@ -31,13 +31,14 @@
   line-height: 1.5;
   color: var(--secondary-black);
   font-size: 1rem;
+  font-weight: var(--fw-medium);
 }
 
 .hero-description .buttons {
   margin-top: 24px;
 }
 
-.hero-description button {
+.hero-description .hero-get-started {
   background-color: var(--primary-black);
   color: var(--white);
   font-size: 1.125rem;
@@ -48,13 +49,15 @@
   cursor: pointer;
 }
 
-.hero-description .buttons label {
-  display: block;
+.hero-description .buttons > div {
+  /* display: block; */
   display: flex;
   align-items: center;
   width: max-content;
   cursor: pointer;
+}
 
+.hero-description .buttons > div p {
   font-size: 1.25rem;
   font-weight: var(--fw-semibold);
   color: var(--primary-black);
@@ -182,11 +185,128 @@
   height: 25px;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 490px) {
   .astronaut-group {
     position: relative;
-    width: 385px;
-    margin: -210px auto 0;
-    background-color: aquamarine;
+    width: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* margin: -217px auto; */
+  }
+
+  .astronaut-group .spacewalks-box {
+    left: 35px;
+    top: 210px;
+  }
+
+  .astronaut-group .exercising-box {
+    top: 135px;
+    right: 36px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    width: 100%;
+    margin: 83px auto 0;
+    padding: 24px;
+  }
+
+  .hero-headline {
+    top: 65px;
+    left: 85px;
+    max-width: 303px;
+  }
+
+  .hero-headline h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero .hero-earth {
+    width: 100%;
+    height: auto;
+    object-fit: none;
+    object-position: unset;
+  }
+
+  .astronaut-group {
+    right: 3px;
+    width: 531px;
+    height: 531px;
+    margin: -327px 0 0 auto;
+    left: unset;
+    transform: unset;
+    /* background-color: aquamarine; */
+  }
+
+  .astronaut-group .time-in-space-box {
+    margin-top: -46px;
+    margin-right: 60px;
+    width: 330px;
+    transform: scale(1.2);
+  }
+
+  .astronaut-group .time-in-space-box .bottom p {
+    letter-spacing: 0.35rem;
+  }
+
+  .astronaut-group .astronaut-hero-img {
+    height: 500px;
+    width: 355px;
+  }
+
+  .astronaut-group .box {
+    padding: 20px;
+  }
+
+  .astronaut-group .box p,
+  .astronaut-group .box p {
+    font-size: 1.125rem;
+  }
+
+  .astronaut-group .icon-container {
+    width: 40px;
+    height: 40px;
+  }
+
+  .astronaut-group .icon-container img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .astronaut-group .spacewalks-box {
+    left: 0px;
+    top: 230px;
+    width: 255px;
+  }
+
+  .astronaut-group .exercising-box {
+    top: 160px;
+    right: 36px;
+    width: 190px;
+  }
+
+  .astronaut-group .exercising-box .bottom {
+    margin-top: 10px;
+  }
+
+  .astronaut-group .exercising-box .bottom img {
+    width: 100%;
+    transform: scale(1.3) translateX(16px);
+  }
+
+  .hero .hero-description {
+    margin: -190px 0 140px;
+    max-width: 440px;
+  }
+
+  .hero .hero-description .buttons {
+    display: flex;
+    align-items: center;
+  }
+
+  .hero .hero-description .buttons .hero-get-started {
+    margin-bottom: 0px;
+    margin-right: 20px;
   }
 }

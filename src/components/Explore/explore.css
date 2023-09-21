@@ -1,15 +1,21 @@
 .explore-container {
-  position: relative;
   margin: 70px 0 70px;
-  height: auto;
-  /* padding: 0 24px; */
+  height: 100%;
+}
+
+.layout-container {
+  display: grid;
+  /* grid-template-rows: 100% auto; */
+  /* height: 650px; */
 }
 
 .explore-container .img-container-mars {
   width: 100vw;
-  height: 350px;
+  height: 343px;
   overflow: none;
-  z-index: 1;
+  /* z-index: 1; */
+  grid-area: -1 / -1 / -1 / 2;
+  overflow: hidden;
 }
 
 .explore-container .img-container-mars .mars {
@@ -23,8 +29,11 @@
   display: flex;
   flex-direction: column;
   padding: 0 24px;
-  margin: -325px 0 0;
+  grid-area: 1 / 1 / 3 / 1;
+  margin-top: 3ch;
   background-color: transparent;
+  /* z-index: 1; */
+  height: min-content;
 }
 
 .explore-container .explore-content h1 {
@@ -63,24 +72,52 @@
   line-height: 1.5;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 770px) {
+  .explore-articles-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 32px;
+  }
+
+  .explore__article {
+    flex: 1;
+    height: 95%;
+  }
+
   .explore-container .img-container-mars {
-    width: 100vw;
-    height: 100%;
-    overflow: none;
-    z-index: 1;
-    padding: 0 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 390px;
   }
 
   .explore-container .img-container-mars .mars {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .explore-container .layout-container {
+    height: 570px;
+  }
+
+  .explore-container .img-container-mars {
+    width: 947px;
+    height: 390px;
+    overflow: none;
+    margin: 0 auto;
+    z-index: 1;
+    /* padding: 0 40px; */
+  }
+
+  .explore-container .img-container-mars .mars {
+    width: 947px;
     object-position: unset;
+    border-radius: 40px;
   }
 
   .explore-content {
-    display: flex;
-    flex-direction: column;
     padding: 0 24px;
-    margin: -335px 0 0;
     background-color: transparent;
     z-index: 99;
   }
@@ -93,15 +130,14 @@
   }
 
   .explore-articles-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 32px;
-    margin: -20px auto 0;
-    width: 85vw;
+    margin: 0 auto;
+    max-width: 900px;
   }
+}
 
-  .explore__article {
-    flex: 1;
+@media only screen and (min-width: 1920px) {
+  .explore-container {
+    transform: scale(1.8);
+    margin-bottom: 510px;
   }
 }

@@ -13,7 +13,7 @@ export default function Hero() {
       </div>
       <Astronaut />
       <div className="hero-description">
-        <p>
+        <p className="description">
           At odissey, our mission is to inspire, educate, and ignite your
           passion for the cosmos. We are your premier destination for all things
           related to space exploration, astronomy, and the mysteries of the

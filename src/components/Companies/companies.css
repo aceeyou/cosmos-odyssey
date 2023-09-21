@@ -28,7 +28,9 @@
 
 @media only screen and (min-width: 1024px) {
   .companies-container {
-    margin-top: -100px;
+    margin: 0 auto 50px;
+    margin-top: -50px;
+    max-width: 947px;
   }
 
   .companies-container div {
@@ -36,5 +38,12 @@
     display: flex;
     justify-content: center;
     margin-bottom: 24px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .companies-container {
+    transform: scale(1.8);
+    margin-bottom: 250px;
   }
 }

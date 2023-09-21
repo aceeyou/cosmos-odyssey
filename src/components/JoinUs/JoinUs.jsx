@@ -4,7 +4,10 @@ export default function JoinUs() {
   return (
     <div className="join-us-container">
       <div className="img-container-jupiter">
-        <img src={process.env.PUBLIC_URL + "/images/jupiter.jpg"} alt="jupiter banner" />
+        <img
+          src={process.env.PUBLIC_URL + "/images/jupiter.jpg"}
+          alt="jupiter banner"
+        />
       </div>
       <div className="join-us-form">
         <h2>Join our community</h2>

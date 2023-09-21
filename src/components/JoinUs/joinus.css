@@ -67,19 +67,13 @@
   cursor: pointer;
 }
 
-@media only screen and (min-width: 1024px) {
-  .join-us-container .img-container-jupiter {
-    width: 92vw;
-    background-color: black;
-    /* padding: 0 40px; */
-    border-radius: 40px;
-    padding: unset;
+@media only screen and (min-width: 600px) {
+  .join-us-container {
+    max-width: 947px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
-  }
-
-  .join-us-container .img-container-jupiter img {
-    object-position: unset;
-    border-radius: 40px;
   }
 
   .join-us-form {
@@ -87,23 +81,12 @@
     flex-direction: column;
     justify-content: center;
     height: 440px;
-    padding: 0px 80px;
+    padding: 0px 40px;
   }
-
-  .join-us-form h2 {
-    max-width: unset;
-  }
-
-  .join-us-form p {
-    max-width: 398px;
-    margin-bottom: 33px;
-  }
-
   .subscribe-form {
     display: flex;
     column-gap: 24px;
   }
-
   .join-us-form .subscribe-form input {
     width: 416px;
     /* height: 100%; */
@@ -119,5 +102,42 @@
     font-weight: var(--fw-semibold);
     color: var(--white);
     cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .join-us-container .img-container-jupiter {
+    width: 947px;
+    background-color: black;
+    /* padding: 0 40px; */
+    border-radius: 40px;
+    padding: unset;
+    margin: 0 auto;
+  }
+
+  .join-us-container .img-container-jupiter img {
+    width: 100%;
+    object-position: unset;
+    border-radius: 40px;
+  }
+
+  .join-us-form {
+    padding: 0px 80px;
+  }
+
+  .join-us-form h2 {
+    max-width: unset;
+  }
+
+  .join-us-form p {
+    max-width: 398px;
+    margin-bottom: 33px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .join-us-container {
+    transform: scale(1.8);
+    margin-bottom: 300px;
   }
 }
